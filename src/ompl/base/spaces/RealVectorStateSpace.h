@@ -99,7 +99,10 @@ namespace ompl
                 }
 
                 /** \brief The value of the actual vector in R<sup>n</sup> */
+		//std::vector<double> values;
                 double *values;
+		
+		bool allocated = false;
             };
 
             /** \brief Constructor. The dimension of of the space needs to be specified. A space representing
